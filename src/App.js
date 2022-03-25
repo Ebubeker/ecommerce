@@ -1,10 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Layout from "./components/layout/Layout";
+
 function App() {
   return (
-    <div className="App">
-      <div>
-        <h1>hello</h1>
-      </div>
-    </div>
+    <Layout>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Layout>
   );
 }
 
