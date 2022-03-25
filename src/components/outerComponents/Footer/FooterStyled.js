@@ -33,6 +33,9 @@ export const Menu = styled.div`
   @media (max-width: ${deviceSize.laptop}) {
     width: 100%;
   }
+  @media (max-width: ${deviceSize.mobileL}) {
+    display: block;
+  }
 `;
 
 export const BrandLogo = styled.p`
@@ -59,7 +62,11 @@ export const Social = styled.div`
   }
 `;
 
-export const ListRow = styled.div``;
+export const ListRow = styled.div`
+  @media (max-width: ${deviceSize.mobileL}) {
+    margin: 20px 0;
+  }
+`;
 
 export const Link = styled.p`
   cursor: pointer;
