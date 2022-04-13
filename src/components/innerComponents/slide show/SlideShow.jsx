@@ -24,8 +24,8 @@ const SlideShow = () => {
   return (
     <Box className='otherStyle'>
         <Slide>
-          {slideImages.map((slid)=>(
-            <SlideImage style={{backgroundImage: `url(${slid.url})`}}>
+          {slideImages.map((slid, i)=>(
+            <SlideImage key={i} style={{backgroundImage: `url(${slid.url})`}}>
                 <Overlay style={{width: "100%", display: "flex", alignItems: "flex-end", textAlign: "center", justifyContent: "center"}}>
                   <Box style={{marginBottom: "40px"}}>
                     <OverlayTitle>IT'S GO TIME</OverlayTitle>

@@ -51,7 +51,9 @@ const Navbar = () => {
             </Box>
           </OpenSideways>
           <Box sx={{display: "flex",alignItems: "center"}}>
-            <Icon src={cartIcon} alt="hello" />
+            <Link style={{display: "flex", alignItems: "center"}} to="/cart">
+              <Icon src={cartIcon} alt="hello" />
+            </Link>
             <Avatar src={avatar} alt="avatar"/>
             <Bars onClick={changeBarStatus}>
               <StraightLine></StraightLine>

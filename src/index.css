@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
   margin: 0;
@@ -15,6 +16,32 @@ body {
 
 .logo {
   font-family: 'Cinzel Decorative', cursive;
+}
+
+.josefinSans {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.rec-arrow:hover{
+  background-color: black;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 code {
